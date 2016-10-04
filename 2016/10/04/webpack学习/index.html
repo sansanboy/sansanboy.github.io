@@ -85,18 +85,33 @@
 
 
 <meta name="description" content="title: webpack学习date: 2016-10-04 10:01:44
-tags:">
+tags:webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。
+学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。
+按照官方教程在本地学习。
+入门
+首先需要安装nodejs
+安装： npm instal">
 <meta property="og:type" content="article">
 <meta property="og:title" content="大軍書摘">
 <meta property="og:url" content="http://motto.gift/2016/10/04/webpack学习/index.html">
 <meta property="og:site_name" content="大軍書摘">
 <meta property="og:description" content="title: webpack学习date: 2016-10-04 10:01:44
-tags:">
-<meta property="og:updated_time" content="2016-10-04T02:02:28.070Z">
+tags:webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。
+学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。
+按照官方教程在本地学习。
+入门
+首先需要安装nodejs
+安装： npm instal">
+<meta property="og:updated_time" content="2016-10-04T02:20:19.571Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大軍書摘">
 <meta name="twitter:description" content="title: webpack学习date: 2016-10-04 10:01:44
-tags:">
+tags:webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。
+学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。
+按照官方教程在本地学习。
+入门
+首先需要安装nodejs
+安装： npm instal">
 
 
 
@@ -276,7 +291,30 @@ tags:">
       
         <hr>
 <p>title: webpack学习<br>date: 2016-10-04 10:01:44</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。</p>
+<p>学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。</p>
+<p>按照<a href="http://webpack.github.io/docs/tutorials/getting-started/" target="_blank" rel="external">官方教程</a><br>在本地学习。</p>
+<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><ol>
+<li>首先需要安装nodejs</li>
+<li>安装： npm install webpack -g</li>
+<li>新建一个空文件夹</li>
+<li>新建文件<em>entry.js</em> <code>document.write(&quot;It works&quot;)</code></li>
+<li>新建文件<em>index.html</em></li>
+</ol>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;bundle.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+</code></pre><ol>
+<li>运行命令 <code>webpack ./entry.js bundle.js</code></li>
+<li>浏览器打开index.html 将看 <em>It works</em></li>
+</ol>
+<h2 id="模块导出"><a href="#模块导出" class="headerlink" title="模块导出"></a>模块导出</h2><ol>
+<li>新建文件content.js  <code>module.exports=&quot;It works form  content.js&quot;</code></li>
+<li>更新entry.js  <code>document.write(require(&quot;./content.js&quot;))</code></li>
+<li>重新运行 <code>webpack ./entry.js bundle.js</code></li>
+<li>浏览器打开，运行ok</li>
+</ol>
+<p><strong>如何用inport命令导入？</strong></p>
+<p>下一遍，学习如何导入css等。</p>
+
       
     </div>
 
@@ -413,7 +451,7 @@ tags:">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags"><span class="nav-number">1.</span> <span class="nav-text">tags:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags"><span class="nav-number">1.</span> <span class="nav-text">tags:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#入门"><span class="nav-number">2.</span> <span class="nav-text">入门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块导出"><span class="nav-number">3.</span> <span class="nav-text">模块导出</span></a></li></ol></div>
             
           </div>
         </section>
