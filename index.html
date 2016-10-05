@@ -233,6 +233,119 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/05/webpack学习三/" itemprop="url">
+                  webpack学习三
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-05T11:07:05+08:00" content="2016-10-05">
+              2016-10-05
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署</strong></p>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><ol>
+<li>在工程下面新建一个文件<em>webpack.config.js</em> `module.exports = {<pre><code>entry:&quot;./entry.js&quot;, 
+output:{
+path:_dirname,
+filename:&quot;bundle.js&quot;
+},module{
+   loaders:[
+   {test:/\.css$/, loader:&quot;style!css&quot;}]}
+</code></pre>};<br>`</li>
+<li>运行 <code>webpack</code></li>
+<li>浏览器打开<em>indexl.html</em> ok</li>
+</ol>
+<h2 id="其它命令参数"><a href="#其它命令参数" class="headerlink" title="其它命令参数"></a>其它命令参数</h2><ol>
+<li>显示进度条和颜色  <code>webpack --progress --colers</code></li>
+<li>文件变动时自己编译<code>webpack --progress -- colers --watch</code><h2 id="开发服务器"><a href="#开发服务器" class="headerlink" title="开发服务器"></a>开发服务器</h2></li>
+<li>安装 <code>npm install webpack-dev-server -g</code></li>
+<li>运行<code>webpack -dev-server --progress --colors</code></li>
+<li>运行 <a href="http://localhost:8080/webpack-dev-server/bundle" target="_blank" rel="external"> http://localhost:8080/webpack-dev-server/bundle</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/04/webpack学习一/" itemprop="url">
                   webpack学习一
                 </a>
@@ -818,7 +931,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -828,7 +941,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>
