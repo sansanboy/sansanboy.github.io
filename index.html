@@ -84,15 +84,15 @@
 
 
 
-<meta name="description" content="看書的點點滴滴">
+<meta name="description" content="记录学习">
 <meta property="og:type" content="website">
-<meta property="og:title" content="大軍書摘">
+<meta property="og:title" content="大軍博客">
 <meta property="og:url" content="http://motto.gift/index.html">
-<meta property="og:site_name" content="大軍書摘">
-<meta property="og:description" content="看書的點點滴滴">
+<meta property="og:site_name" content="大軍博客">
+<meta property="og:description" content="记录学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大軍書摘">
-<meta name="twitter:description" content="看書的點點滴滴">
+<meta name="twitter:title" content="大軍博客">
+<meta name="twitter:description" content="记录学习">
 
 
 
@@ -110,7 +110,7 @@
   };
 </script>
 
-  <title> 大軍書摘 </title>
+  <title> 大軍博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
@@ -143,11 +143,11 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">大軍書摘</span>
+      <span class="site-title">大軍博客</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">每天都是新的</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -211,6 +211,186 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/06/微信小程序配置二/" itemprop="url">
+                  微信小程序配置二
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-06T13:49:08+08:00" content="2016-10-06">
+              2016-10-06
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="tabBar"><a href="#tabBar" class="headerlink" title="tabBar"></a>tabBar</h2><p>客户端窗口底部的tab页面切换，<strong>只能配置最好两个、最多5个tab</strong></p>
+<p>属性说明：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:right">类型</th>
+<th style="text-align:center">必填</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:right">HexColor</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab上的文字默认颜色</td>
+</tr>
+<tr>
+<td style="text-align:left">selectedColor</td>
+<td style="text-align:right">HexColor</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab上的文字选中时的颜色</td>
+</tr>
+<tr>
+<td style="text-align:left">backgroundColor</td>
+<td style="text-align:right">HexColor</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab的背景颜色</td>
+</tr>
+<tr>
+<td style="text-align:left">boderStyle</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">black</td>
+<td style="text-align:center">tab上边框的颜色，仅支持black/white</td>
+</tr>
+<tr>
+<td style="text-align:left">list</td>
+<td style="text-align:right">Array</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab的列表，详见list属性说明，最少2个、最多5个tab</td>
+</tr>
+</tbody>
+</table>
+<p>list接受一个数组，数组中的每个项都是一个对象，属性值如下</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:right">类型</th>
+<th style="text-align:center">必填</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">pagePath</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">页面路径，必须在pages中先定义</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">tab上按钮文字</td>
+</tr>
+<tr>
+<td style="text-align:left">iconPath</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">图片路径，icon大小限制为40kb</td>
+</tr>
+<tr>
+<td style="text-align:left">selectedIconPath</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">选中时的图片路径，icon大小限制为40kb</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -926,12 +1106,12 @@ filename:&quot;bundle.js&quot;
                src="/images/avatar2.jpg"
                alt="大軍" />
           <p class="site-author-name" itemprop="name">大軍</p>
-          <p class="site-description motion-element" itemprop="description">看書的點點滴滴</p>
+          <p class="site-description motion-element" itemprop="description">记录学习</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -941,7 +1121,7 @@ filename:&quot;bundle.js&quot;
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>

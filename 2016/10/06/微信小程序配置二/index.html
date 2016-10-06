@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="微信小程序," />
 
 
 
@@ -84,37 +84,127 @@
 
 
 
-<meta name="description" content="webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。
-学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。
-按照官方教程在本地学习。
-入门
-首先需要安装nodejs
-安装： npm install webpack -g
-新建一个空文件夹
-新建文件entry.js document.writ">
+<meta name="description" content="tabBar客户端窗口底部的tab页面切换，只能配置最好两个、最多5个tab
+属性说明：
+
+
+
+属性
+类型
+必填
+默认值
+描述
+
+
+
+
+color
+HexColor
+是
+
+tab上的文字默认颜色
+
+
+selectedColor
+HexColor
+是
+
+tab上的文字选中时的颜色
+
+
+backgroundColor
+HexColor
+是
+
+tab的背景颜色
+
+
+boderStyle
+String
+否">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack学习一">
-<meta property="og:url" content="http://motto.gift/2016/10/04/webpack学习一/index.html">
+<meta property="og:title" content="微信小程序配置二">
+<meta property="og:url" content="http://motto.gift/2016/10/06/微信小程序配置二/index.html">
 <meta property="og:site_name" content="大軍博客">
-<meta property="og:description" content="webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。
-学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。
-按照官方教程在本地学习。
-入门
-首先需要安装nodejs
-安装： npm install webpack -g
-新建一个空文件夹
-新建文件entry.js document.writ">
-<meta property="og:updated_time" content="2016-10-04T06:48:52.328Z">
+<meta property="og:description" content="tabBar客户端窗口底部的tab页面切换，只能配置最好两个、最多5个tab
+属性说明：
+
+
+
+属性
+类型
+必填
+默认值
+描述
+
+
+
+
+color
+HexColor
+是
+
+tab上的文字默认颜色
+
+
+selectedColor
+HexColor
+是
+
+tab上的文字选中时的颜色
+
+
+backgroundColor
+HexColor
+是
+
+tab的背景颜色
+
+
+boderStyle
+String
+否">
+<meta property="og:updated_time" content="2016-10-06T07:36:07.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack学习一">
-<meta name="twitter:description" content="webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。
-学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。
-按照官方教程在本地学习。
-入门
-首先需要安装nodejs
-安装： npm install webpack -g
-新建一个空文件夹
-新建文件entry.js document.writ">
+<meta name="twitter:title" content="微信小程序配置二">
+<meta name="twitter:description" content="tabBar客户端窗口底部的tab页面切换，只能配置最好两个、最多5个tab
+属性说明：
+
+
+
+属性
+类型
+必填
+默认值
+描述
+
+
+
+
+color
+HexColor
+是
+
+tab上的文字默认颜色
+
+
+selectedColor
+HexColor
+是
+
+tab上的文字选中时的颜色
+
+
+backgroundColor
+HexColor
+是
+
+tab的背景颜色
+
+
+boderStyle
+String
+否">
 
 
 
@@ -132,7 +222,7 @@
   };
 </script>
 
-  <title> webpack学习一 | 大軍博客 </title>
+  <title> 微信小程序配置二 | 大軍博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
@@ -252,7 +342,7 @@
             
             
               
-                webpack学习一
+                微信小程序配置二
               
             
           </h1>
@@ -264,8 +354,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-10-04T14:48:25+08:00" content="2016-10-04">
-              2016-10-04
+            <time itemprop="dateCreated" datetime="2016-10-06T13:49:08+08:00" content="2016-10-06">
+              2016-10-06
             </time>
           </span>
 
@@ -292,29 +382,93 @@
       
 
       
-        <p>webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。</p>
-<p>学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。</p>
-<p>按照<a href="http://webpack.github.io/docs/tutorials/getting-started/" target="_blank" rel="external">官方教程</a><br>在本地学习。</p>
-<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><ol>
-<li>首先需要安装nodejs</li>
-<li>安装： npm install webpack -g</li>
-<li>新建一个空文件夹</li>
-<li>新建文件<em>entry.js</em> <code>document.write(&quot;It works&quot;)</code></li>
-<li>新建文件<em>index.html</em></li>
-</ol>
-<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;bundle.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-</code></pre><ol>
-<li>运行命令 <code>webpack ./entry.js bundle.js</code></li>
-<li>浏览器打开index.html 将看 <em>It works</em></li>
-</ol>
-<h2 id="模块导出"><a href="#模块导出" class="headerlink" title="模块导出"></a>模块导出</h2><ol>
-<li>新建文件content.js  <code>module.exports=&quot;It works form  content.js&quot;</code></li>
-<li>更新entry.js  <code>document.write(require(&quot;./content.js&quot;))</code></li>
-<li>重新运行 <code>webpack ./entry.js bundle.js</code></li>
-<li>浏览器打开，运行ok</li>
-</ol>
-<p><strong>如何用inport命令导入？</strong></p>
-<p>下一遍，学习如何导入css等。</p>
+        <h2 id="tabBar"><a href="#tabBar" class="headerlink" title="tabBar"></a>tabBar</h2><p>客户端窗口底部的tab页面切换，<strong>只能配置最好两个、最多5个tab</strong></p>
+<p>属性说明：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:right">类型</th>
+<th style="text-align:center">必填</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:right">HexColor</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab上的文字默认颜色</td>
+</tr>
+<tr>
+<td style="text-align:left">selectedColor</td>
+<td style="text-align:right">HexColor</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab上的文字选中时的颜色</td>
+</tr>
+<tr>
+<td style="text-align:left">backgroundColor</td>
+<td style="text-align:right">HexColor</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab的背景颜色</td>
+</tr>
+<tr>
+<td style="text-align:left">boderStyle</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">black</td>
+<td style="text-align:center">tab上边框的颜色，仅支持black/white</td>
+</tr>
+<tr>
+<td style="text-align:left">list</td>
+<td style="text-align:right">Array</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">tab的列表，详见list属性说明，最少2个、最多5个tab</td>
+</tr>
+</tbody>
+</table>
+<p>list接受一个数组，数组中的每个项都是一个对象，属性值如下</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:right">类型</th>
+<th style="text-align:center">必填</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">pagePath</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">页面路径，必须在pages中先定义</td>
+</tr>
+<tr>
+<td style="text-align:left">text</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">tab上按钮文字</td>
+</tr>
+<tr>
+<td style="text-align:left">iconPath</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">图片路径，icon大小限制为40kb</td>
+</tr>
+<tr>
+<td style="text-align:left">selectedIconPath</td>
+<td style="text-align:right">String</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">选中时的图片路径，icon大小限制为40kb</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -334,22 +488,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/微信小程序/" rel="tag">#微信小程序</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/04/webpack学习二/" rel="next" title="webpack学习二">
-                <i class="fa fa-chevron-left"></i> webpack学习二
+              <a href="/2016/10/05/webpack学习三/" rel="next" title="webpack学习三">
+                <i class="fa fa-chevron-left"></i> webpack学习三
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/05/webpack学习三/" rel="prev" title="webpack学习三">
-                webpack学习三 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -456,7 +612,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#入门"><span class="nav-number">1.</span> <span class="nav-text">入门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块导出"><span class="nav-number">2.</span> <span class="nav-text">模块导出</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tabBar"><span class="nav-number">1.</span> <span class="nav-text">tabBar</span></a></li></ol></div>
             
           </div>
         </section>
