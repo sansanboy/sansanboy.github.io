@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="webpack," />
+  <meta name="keywords" content="微信小程序," />
 
 
 
@@ -84,31 +84,43 @@
 
 
 
-<meta name="description" content="我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署
-配置文件
-在工程下面新建一个文件webpack.config.js `module.exports = {entry:&amp;quot;./entry.js&amp;quot;, 
-output:{
-path:_dirname,
-filename:&amp;q">
+<meta name="description" content="微信小程序分为逻辑层和视图层，视图层是自己定义的WXML标签，逻辑层使用js，但是小程序并不是运行在浏览器上面，所以不支持document等。App(）
+注册App()函数用来注册一个小程序，写在工程下的app.js中。相关参数：
+
+onLaunch：小程序初始化完成时触发
+onShow：小程序启动或者后台进入前台时触发
+onHide: 程序进入后台时触发
+其它：自定义函数或者变量
+
+调用
+App">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack学习三">
-<meta property="og:url" content="http://motto.gift/2016/10/05/webpack学习三/index.html">
+<meta property="og:title" content="微信小程序逻辑层-注册程序">
+<meta property="og:url" content="http://motto.gift/2016/10/07/微信小程序逻辑层-注册程序/index.html">
 <meta property="og:site_name" content="大軍博客">
-<meta property="og:description" content="我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署
-配置文件
-在工程下面新建一个文件webpack.config.js `module.exports = {entry:&amp;quot;./entry.js&amp;quot;, 
-output:{
-path:_dirname,
-filename:&amp;q">
-<meta property="og:updated_time" content="2016-10-05T03:24:37.678Z">
+<meta property="og:description" content="微信小程序分为逻辑层和视图层，视图层是自己定义的WXML标签，逻辑层使用js，但是小程序并不是运行在浏览器上面，所以不支持document等。App(）
+注册App()函数用来注册一个小程序，写在工程下的app.js中。相关参数：
+
+onLaunch：小程序初始化完成时触发
+onShow：小程序启动或者后台进入前台时触发
+onHide: 程序进入后台时触发
+其它：自定义函数或者变量
+
+调用
+App">
+<meta property="og:updated_time" content="2016-10-07T08:27:54.425Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack学习三">
-<meta name="twitter:description" content="我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署
-配置文件
-在工程下面新建一个文件webpack.config.js `module.exports = {entry:&amp;quot;./entry.js&amp;quot;, 
-output:{
-path:_dirname,
-filename:&amp;q">
+<meta name="twitter:title" content="微信小程序逻辑层-注册程序">
+<meta name="twitter:description" content="微信小程序分为逻辑层和视图层，视图层是自己定义的WXML标签，逻辑层使用js，但是小程序并不是运行在浏览器上面，所以不支持document等。App(）
+注册App()函数用来注册一个小程序，写在工程下的app.js中。相关参数：
+
+onLaunch：小程序初始化完成时触发
+onShow：小程序启动或者后台进入前台时触发
+onHide: 程序进入后台时触发
+其它：自定义函数或者变量
+
+调用
+App">
 
 
 
@@ -126,7 +138,7 @@ filename:&amp;q">
   };
 </script>
 
-  <title> webpack学习三 | 大軍博客 </title>
+  <title> 微信小程序逻辑层-注册程序 | 大軍博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
@@ -246,7 +258,7 @@ filename:&amp;q">
             
             
               
-                webpack学习三
+                微信小程序逻辑层-注册程序
               
             
           </h1>
@@ -258,8 +270,8 @@ filename:&amp;q">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-10-05T11:07:05+08:00" content="2016-10-05">
-              2016-10-05
+            <time itemprop="dateCreated" datetime="2016-10-07T11:12:18+08:00" content="2016-10-07">
+              2016-10-07
             </time>
           </span>
 
@@ -286,25 +298,17 @@ filename:&amp;q">
       
 
       
-        <p><strong>我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署</strong></p>
-<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><ol>
-<li>在工程下面新建一个文件<em>webpack.config.js</em> `module.exports = {<pre><code>entry:&quot;./entry.js&quot;, 
-output:{
-path:_dirname,
-filename:&quot;bundle.js&quot;
-},module{
-   loaders:[
-   {test:/\.css$/, loader:&quot;style!css&quot;}]}
-</code></pre>};<br>`</li>
-<li>运行 <code>webpack</code></li>
-<li>浏览器打开<em>indexl.html</em> ok</li>
-</ol>
-<h2 id="其它命令参数"><a href="#其它命令参数" class="headerlink" title="其它命令参数"></a>其它命令参数</h2><ol>
-<li>显示进度条和颜色  <code>webpack --progress --colers</code></li>
-<li>文件变动时自己编译<code>webpack --progress -- colers --watch</code><h2 id="开发服务器"><a href="#开发服务器" class="headerlink" title="开发服务器"></a>开发服务器</h2></li>
-<li>安装 <code>npm install webpack-dev-server -g</code></li>
-<li>运行<code>webpack -dev-server --progress --colors</code></li>
-<li>运行 <a href="http://localhost:8080/webpack-dev-server/bundle" target="_blank" rel="external"> http://localhost:8080/webpack-dev-server/bundle</a></li>
+        <p>微信小程序分为逻辑层和视图层，视图层是自己定义的WXML标签，逻辑层使用js，但是小程序并不是运行在浏览器上面，所以不支持document等。<br>App(）</p>
+<h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>App()函数用来注册一个小程序，写在工程下的app.js中。<br>相关参数：</p>
+<ul>
+<li>onLaunch：小程序初始化完成时触发</li>
+<li>onShow：小程序启动或者后台进入前台时触发</li>
+<li>onHide: 程序进入后台时触发</li>
+<li>其它：自定义函数或者变量</li>
+</ul>
+<h2 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h2><ol>
+<li>App()调用时使用this</li>
+<li>在其它模块中调用是使用getApp()</li>
 </ol>
 
       
@@ -327,7 +331,7 @@ filename:&quot;bundle.js&quot;
       
         <div class="post-tags">
           
-            <a href="/tags/webpack/" rel="tag">#webpack</a>
+            <a href="/tags/微信小程序/" rel="tag">#微信小程序</a>
           
         </div>
       
@@ -336,17 +340,13 @@ filename:&quot;bundle.js&quot;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/04/webpack学习一/" rel="next" title="webpack学习一">
-                <i class="fa fa-chevron-left"></i> webpack学习一
+              <a href="/2016/10/07/微信小程序配置三/" rel="next" title="微信小程序配置三">
+                <i class="fa fa-chevron-left"></i> 微信小程序配置三
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/06/微信小程序配置二/" rel="prev" title="微信小程序配置二">
-                微信小程序配置二 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -453,7 +453,7 @@ filename:&quot;bundle.js&quot;
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置文件"><span class="nav-number">1.</span> <span class="nav-text">配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它命令参数"><span class="nav-number">2.</span> <span class="nav-text">其它命令参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发服务器"><span class="nav-number">3.</span> <span class="nav-text">开发服务器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册"><span class="nav-number">1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调用"><span class="nav-number">2.</span> <span class="nav-text">调用</span></a></li></ol></div>
             
           </div>
         </section>
