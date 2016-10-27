@@ -233,6 +233,132 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/28/vuejs组件/" itemprop="url">
+                  vuejs组件
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-28T00:19:11+08:00" content="2016-10-28">
+              2016-10-28
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>vuejs组件学习</p>
+<pre><code>Vue.component(&apos;todo-item&apos;, {
+// The todo-item component now accepts a// &quot;prop&quot;, which is like a custom attribute.// This prop is called todo. 
+props: [&apos;todo&apos;], 
+template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
+})
+</code></pre><p>现在，我们可以使用 v-bind 指令将 todo 传到每一个重复的组件中：</p>
+<pre><code>&lt;div id=&quot;app-7&quot;&gt;
+&lt;ol&gt;
+&lt;todo-item v-for=&quot;todo in todos&quot; v-bind:todo=&quot;todo&quot;&gt;&lt;/todo-item&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+
+
+
+Vue.component(&apos;todo-item&apos;, {
+ props: [&apos;todo&apos;],
+  template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
+  })
+  var app7 = new Vue({
+   el: &apos;#app-7&apos;,
+   data: {
+todos: [
+  { text: &apos;Learn JavaScript&apos; },
+  { text: &apos;Learn Vue&apos; },
+  { text: &apos;Build something awesome&apos; }
+]
+ }
+ })
+</code></pre><p>vue-component 的 todo-item 和 ol 中的todo-item 对应<br>在vue-component 中 props 通过todo  将值传入 template 中 </p>
+<p>new vue todos 和 v-for </p>
+<p>v-bind:todo = “todo”:前一个todo 是 组件component 中的 props的todo ，后面todo 是v-for 中的todo ，做一个绑定</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/07/微信小程序逻辑层-注册程序/" itemprop="url">
                   微信小程序逻辑层-注册程序
                 </a>
@@ -1348,7 +1474,7 @@ filename:&quot;bundle.js&quot;
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -1358,7 +1484,7 @@ filename:&quot;bundle.js&quot;
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>

@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vuejs," />
 
 
 
@@ -84,25 +84,25 @@
 
 
 
-<meta name="description" content="新的博客，用hexo搭建，部署在github上，以前也是用github搭建，用的是jekyll，比較複雜。
-後面用wordpress搭建在阿里雲上，但服務器太貴。
-所以這次就用github，不需要服務器費用，費用只有域名的費用。
-後期準備，把以前的書摘導進來。">
+<meta name="description" content="vuejs组件学习
+Vue.component(&amp;apos;todo-item&amp;apos;, {
+// The todo-item component now accepts a// &amp;quot;prop&amp;quot;, which is like a custom attribute.// This prop is called todo. 
+props: [&amp;apos;todo&amp;apos;],">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新博客">
-<meta property="og:url" content="http://motto.gift/2016/09/03/新博客/index.html">
+<meta property="og:title" content="vuejs组件">
+<meta property="og:url" content="http://motto.gift/2016/10/28/vuejs组件/index.html">
 <meta property="og:site_name" content="大軍博客">
-<meta property="og:description" content="新的博客，用hexo搭建，部署在github上，以前也是用github搭建，用的是jekyll，比較複雜。
-後面用wordpress搭建在阿里雲上，但服務器太貴。
-所以這次就用github，不需要服務器費用，費用只有域名的費用。
-後期準備，把以前的書摘導進來。">
-<meta property="og:updated_time" content="2016-09-03T14:06:42.249Z">
+<meta property="og:description" content="vuejs组件学习
+Vue.component(&amp;apos;todo-item&amp;apos;, {
+// The todo-item component now accepts a// &amp;quot;prop&amp;quot;, which is like a custom attribute.// This prop is called todo. 
+props: [&amp;apos;todo&amp;apos;],">
+<meta property="og:updated_time" content="2016-10-27T16:33:06.583Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新博客">
-<meta name="twitter:description" content="新的博客，用hexo搭建，部署在github上，以前也是用github搭建，用的是jekyll，比較複雜。
-後面用wordpress搭建在阿里雲上，但服務器太貴。
-所以這次就用github，不需要服務器費用，費用只有域名的費用。
-後期準備，把以前的書摘導進來。">
+<meta name="twitter:title" content="vuejs组件">
+<meta name="twitter:description" content="vuejs组件学习
+Vue.component(&amp;apos;todo-item&amp;apos;, {
+// The todo-item component now accepts a// &amp;quot;prop&amp;quot;, which is like a custom attribute.// This prop is called todo. 
+props: [&amp;apos;todo&amp;apos;],">
 
 
 
@@ -120,7 +120,7 @@
   };
 </script>
 
-  <title> 新博客 | 大軍博客 </title>
+  <title> vuejs组件 | 大軍博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
@@ -240,7 +240,7 @@
             
             
               
-                新博客
+                vuejs组件
               
             
           </h1>
@@ -252,8 +252,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-09-03T21:41:03+08:00" content="2016-09-03">
-              2016-09-03
+            <time itemprop="dateCreated" datetime="2016-10-28T00:19:11+08:00" content="2016-10-28">
+              2016-10-28
             </time>
           </span>
 
@@ -280,10 +280,39 @@
       
 
       
-        <p>新的博客，用hexo搭建，部署在github上，以前也是用github搭建，用的是jekyll，比較複雜。</p>
-<p>後面用wordpress搭建在阿里雲上，但服務器太貴。</p>
-<p>所以這次就用github，不需要服務器費用，費用只有域名的費用。</p>
-<p>後期準備，把以前的書摘導進來。</p>
+        <p>vuejs组件学习</p>
+<pre><code>Vue.component(&apos;todo-item&apos;, {
+// The todo-item component now accepts a// &quot;prop&quot;, which is like a custom attribute.// This prop is called todo. 
+props: [&apos;todo&apos;], 
+template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
+})
+</code></pre><p>现在，我们可以使用 v-bind 指令将 todo 传到每一个重复的组件中：</p>
+<pre><code>&lt;div id=&quot;app-7&quot;&gt;
+&lt;ol&gt;
+&lt;todo-item v-for=&quot;todo in todos&quot; v-bind:todo=&quot;todo&quot;&gt;&lt;/todo-item&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+
+
+
+Vue.component(&apos;todo-item&apos;, {
+ props: [&apos;todo&apos;],
+  template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
+  })
+  var app7 = new Vue({
+   el: &apos;#app-7&apos;,
+   data: {
+todos: [
+  { text: &apos;Learn JavaScript&apos; },
+  { text: &apos;Learn Vue&apos; },
+  { text: &apos;Build something awesome&apos; }
+]
+ }
+ })
+</code></pre><p>vue-component 的 todo-item 和 ol 中的todo-item 对应<br>在vue-component 中 props 通过todo  将值传入 template 中 </p>
+<p>new vue todos 和 v-for </p>
+<p>v-bind:todo = “todo”:前一个todo 是 组件component 中的 props的todo ，后面todo 是v-for 中的todo ，做一个绑定</p>
 
       
     </div>
@@ -303,18 +332,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/vuejs/" rel="tag">#vuejs</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/10/07/微信小程序逻辑层-注册程序/" rel="next" title="微信小程序逻辑层-注册程序">
+                <i class="fa fa-chevron-left"></i> 微信小程序逻辑层-注册程序
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/24/微信小程序配置一/" rel="prev" title="微信小程序配置">
-                微信小程序配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
