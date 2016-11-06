@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="vuejs," />
+  <meta name="keywords" content="技术," />
 
 
 
@@ -84,25 +84,43 @@
 
 
 
-<meta name="description" content="vuejs组件学习
-Vue.component(&amp;apos;todo-item&amp;apos;, {
-// The todo-item component now accepts a// &amp;quot;prop&amp;quot;, which is like a custom attribute.// This prop is called todo. 
-props: [&amp;apos;todo&amp;apos;],">
+<meta name="description" content="喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。
+不管了，其实我也不知道自己想成为谁，能成为谁，先说自己最近关注的技术，然后做个筛选。
+
+vuejs
+yaf
+css
+shell
+git
+docker
+nosq">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vuejs组件">
-<meta property="og:url" content="http://motto.gift/2016/10/28/vuejs组件/index.html">
+<meta property="og:title" content="web程序员必备技能">
+<meta property="og:url" content="http://motto.gift/2016/11/06/web程序员必备技能/index.html">
 <meta property="og:site_name" content="大軍博客">
-<meta property="og:description" content="vuejs组件学习
-Vue.component(&amp;apos;todo-item&amp;apos;, {
-// The todo-item component now accepts a// &amp;quot;prop&amp;quot;, which is like a custom attribute.// This prop is called todo. 
-props: [&amp;apos;todo&amp;apos;],">
-<meta property="og:updated_time" content="2016-10-27T16:33:06.583Z">
+<meta property="og:description" content="喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。
+不管了，其实我也不知道自己想成为谁，能成为谁，先说自己最近关注的技术，然后做个筛选。
+
+vuejs
+yaf
+css
+shell
+git
+docker
+nosq">
+<meta property="og:updated_time" content="2016-11-06T06:34:40.394Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vuejs组件">
-<meta name="twitter:description" content="vuejs组件学习
-Vue.component(&amp;apos;todo-item&amp;apos;, {
-// The todo-item component now accepts a// &amp;quot;prop&amp;quot;, which is like a custom attribute.// This prop is called todo. 
-props: [&amp;apos;todo&amp;apos;],">
+<meta name="twitter:title" content="web程序员必备技能">
+<meta name="twitter:description" content="喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。
+不管了，其实我也不知道自己想成为谁，能成为谁，先说自己最近关注的技术，然后做个筛选。
+
+vuejs
+yaf
+css
+shell
+git
+docker
+nosq">
 
 
 
@@ -120,7 +138,7 @@ props: [&amp;apos;todo&amp;apos;],">
   };
 </script>
 
-  <title> vuejs组件 | 大軍博客 </title>
+  <title> web程序员必备技能 | 大軍博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-hk">
@@ -240,7 +258,7 @@ props: [&amp;apos;todo&amp;apos;],">
             
             
               
-                vuejs组件
+                web程序员必备技能
               
             
           </h1>
@@ -252,8 +270,8 @@ props: [&amp;apos;todo&amp;apos;],">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-10-28T00:19:11+08:00" content="2016-10-28">
-              2016-10-28
+            <time itemprop="dateCreated" datetime="2016-11-06T14:04:54+08:00" content="2016-11-06">
+              2016-11-06
             </time>
           </span>
 
@@ -280,39 +298,26 @@ props: [&amp;apos;todo&amp;apos;],">
       
 
       
-        <p>vuejs组件学习</p>
-<pre><code>Vue.component(&apos;todo-item&apos;, {
-// The todo-item component now accepts a// &quot;prop&quot;, which is like a custom attribute.// This prop is called todo. 
-props: [&apos;todo&apos;], 
-template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
-})
-</code></pre><p>现在，我们可以使用 v-bind 指令将 todo 传到每一个重复的组件中：</p>
-<pre><code>&lt;div id=&quot;app-7&quot;&gt;
-&lt;ol&gt;
-&lt;todo-item v-for=&quot;todo in todos&quot; v-bind:todo=&quot;todo&quot;&gt;&lt;/todo-item&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-
-
-
-
-Vue.component(&apos;todo-item&apos;, {
- props: [&apos;todo&apos;],
-  template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
-  })
-  var app7 = new Vue({
-   el: &apos;#app-7&apos;,
-   data: {
-todos: [
-  { text: &apos;Learn JavaScript&apos; },
-  { text: &apos;Learn Vue&apos; },
-  { text: &apos;Build something awesome&apos; }
-]
- }
- })
-</code></pre><p>vue-component 的 todo-item 和 ol 中的todo-item 对应<br>在vue-component 中 props 通过todo  将值传入 template 中 </p>
-<p>new vue todos 和 v-for </p>
-<p>v-bind:todo = “todo”:前一个todo 是 组件component 中的 props的todo ，后面todo 是v-for 中的todo ，做一个绑定</p>
+        <p>喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。</p>
+<p>不管了，其实我也不知道自己想成为谁，能成为谁，先说自己最近关注的技术，然后做个筛选。</p>
+<ul>
+<li>vuejs</li>
+<li>yaf</li>
+<li>css</li>
+<li>shell</li>
+<li>git</li>
+<li>docker</li>
+<li>nosql</li>
+<li>mysql</li>
+<li>jquery</li>
+<li>linux</li>
+<li>微信小程序</li>
+<li>。。。想到了再补充</li>
+</ul>
+<p>现在公司的业务是做数据报表统计，用到的技术主要有数据查询、各种图展示、系统部署。</p>
+<p>那么现在我需要学习的技术有shell脚本，linux基础知识，css，mysql，yaf。这些掌握的更熟练的话可以更好的完成自己手上当前的工作。</p>
+<p>那么vuejs、nosql、docker是自己感兴趣的东西，工作中暂时用不上，所以这些可以做为自己下班时间研究的东西。平时做一些demo进行学习。</p>
+<p>有时会太专注于技术，技术是解决问题，如果能给你的工作提供帮助，一定要多研究。如果只是自己喜欢，那也要多研究，但是不能影响你的工作。</p>
 
       
     </div>
@@ -334,7 +339,7 @@ todos: [
       
         <div class="post-tags">
           
-            <a href="/tags/vuejs/" rel="tag">#vuejs</a>
+            <a href="/tags/技术/" rel="tag">#技术</a>
           
         </div>
       
@@ -343,17 +348,13 @@ todos: [
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/07/微信小程序逻辑层-注册程序/" rel="next" title="微信小程序逻辑层-注册程序">
-                <i class="fa fa-chevron-left"></i> 微信小程序逻辑层-注册程序
+              <a href="/2016/10/28/vuejs组件/" rel="next" title="vuejs组件">
+                <i class="fa fa-chevron-left"></i> vuejs组件
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/06/web程序员必备技能/" rel="prev" title="web程序员必备技能">
-                web程序员必备技能 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
