@@ -233,6 +233,132 @@
             
               
                 
+                <a class="post-title-link" href="/2016/11/26/mongoDb入门/" itemprop="url">
+                  mongoDb入门
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-11-26T11:55:46+08:00" content="2016-11-26">
+              2016-11-26
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>MongoDB入门</p>
+<ol>
+<li>启动命令</li>
+</ol>
+<pre><code>.\mongod.exe --dbpath=D:\mongodb\db
+</code></pre><ol>
+<li>连接 </li>
+</ol>
+<pre><code>.\mongod.exe
+</code></pre><ol>
+<li>操作<ol>
+<li>插入</li>
+</ol>
+</li>
+</ol>
+<pre><code>db.user.insert(post);
+5. 查询
+
+
+db.user.find();
+6. 查询一个
+
+
+db.user.findOne()
+7. 更新
+
+
+db.blog.update({title:&quot;MongoDB入门&quot;},post)
+8. 删除
+
+
+db.blog.remove(title:&quot;MongoDB精通&quot;);
+9. 
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/11/06/web程序员必备技能/" itemprop="url">
                   web程序员必备技能
                 </a>
@@ -1301,154 +1427,6 @@ filename:&quot;bundle.js&quot;
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/24/微信小程序配置一/" itemprop="url">
-                  微信小程序配置
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-09-24T10:52:18+08:00" content="2016-09-24">
-              2016-09-24
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="pages"><a href="#pages" class="headerlink" title="pages"></a>pages</h2><p>pages 设置页面路径，每一项代表页面的<em>路径+文件名</em>，数组的第一项代表初始页面</p>
-<pre><code>{&quot;pages&quot;:
-    [
-        &quot;page/index/index&quot;
-    ]
-}
-</code></pre><h2 id="window"><a href="#window" class="headerlink" title="window"></a>window</h2><p>window 设置状态栏、导航条、标题、窗口背景色</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>navigationBarBackgroundColor</td>
-<td>HexColor</td>
-<td>#000000</td>
-<td>导航栏背景颜色，如”#000000”</td>
-</tr>
-<tr>
-<td>navigationBarTextStyle</td>
-<td>String</td>
-<td>white</td>
-<td>导航栏标题颜色，仅支持 black/white</td>
-</tr>
-<tr>
-<td>navigationBarTitleText</td>
-<td>String</td>
-<td></td>
-<td>导航栏标题文字内容</td>
-</tr>
-<tr>
-<td>backgroundColor</td>
-<td>HexColor</td>
-<td>#ffffff</td>
-<td>窗口的背景色</td>
-</tr>
-<tr>
-<td>backgroundTextStyle</td>
-<td>String</td>
-<td>dark</td>
-<td>下拉背景字体、loading 图的样式，仅支持 dark/light</td>
-</tr>
-<tr>
-<td>enablePullDownRefresh</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否开启下拉刷新</td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1494,7 +1472,7 @@ filename:&quot;bundle.js&quot;
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -1504,7 +1482,7 @@ filename:&quot;bundle.js&quot;
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>
