@@ -106,18 +106,18 @@
 
 
 
-  <meta name="description" content="networkTimeout设置网络超时时间    属性 类型 必填 说明     request Number 否 wx.request的超时时间，单位毫秒   connectSocket Number 否 wx.connectSocket的超时时间，单位毫秒   request Number 否 wx.request的超时时间，单位毫秒    debug调试模式开启 page.json每个小程">
-<meta name="keywords" content="微信小程序">
+  <meta name="description" content="公司统一应用的配置，要求每个应用都要有自己的appid，重新部署，规范化。自己的项目差不多有10个，都是php项目，配置基本一样。配置nginx的时候传统的做法是vim每个nginx配置文件进行配置。这个完全可以自定化，可以写一个配置模板，里面的appid和端口用变量替换。然后用sed命令进行批量替换。  配置模板 123upstream &amp;#123;appid&amp;#125;_server &amp;#12">
+<meta name="keywords" content="大军博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序配置三">
-<meta property="og:url" content="http://52shuzhai.com/2016/10/07/2016-10-07-微信小程序配置三/index.html">
+<meta property="og:title" content="nginx配置模版">
+<meta property="og:url" content="http://52shuzhai.com/2019/05/29/nginx配置模版/index.html">
 <meta property="og:site_name" content="方始博客">
-<meta property="og:description" content="networkTimeout设置网络超时时间    属性 类型 必填 说明     request Number 否 wx.request的超时时间，单位毫秒   connectSocket Number 否 wx.connectSocket的超时时间，单位毫秒   request Number 否 wx.request的超时时间，单位毫秒    debug调试模式开启 page.json每个小程">
+<meta property="og:description" content="公司统一应用的配置，要求每个应用都要有自己的appid，重新部署，规范化。自己的项目差不多有10个，都是php项目，配置基本一样。配置nginx的时候传统的做法是vim每个nginx配置文件进行配置。这个完全可以自定化，可以写一个配置模板，里面的appid和端口用变量替换。然后用sed命令进行批量替换。  配置模板 123upstream &amp;#123;appid&amp;#125;_server &amp;#12">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-26T16:54:16.000Z">
+<meta property="og:updated_time" content="2019-05-28T17:10:48.046Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微信小程序配置三">
-<meta name="twitter:description" content="networkTimeout设置网络超时时间    属性 类型 必填 说明     request Number 否 wx.request的超时时间，单位毫秒   connectSocket Number 否 wx.connectSocket的超时时间，单位毫秒   request Number 否 wx.request的超时时间，单位毫秒    debug调试模式开启 page.json每个小程">
+<meta name="twitter:title" content="nginx配置模版">
+<meta name="twitter:description" content="公司统一应用的配置，要求每个应用都要有自己的appid，重新部署，规范化。自己的项目差不多有10个，都是php项目，配置基本一样。配置nginx的时候传统的做法是vim每个nginx配置文件进行配置。这个完全可以自定化，可以写一个配置模板，里面的appid和端口用变量替换。然后用sed命令进行批量替换。  配置模板 123upstream &amp;#123;appid&amp;#125;_server &amp;#12">
 
 
 
@@ -125,7 +125,7 @@
 
   
   
-  <link rel="canonical" href="http://52shuzhai.com/2016/10/07/2016-10-07-微信小程序配置三/">
+  <link rel="canonical" href="http://52shuzhai.com/2019/05/29/nginx配置模版/">
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>微信小程序配置三 | 方始博客</title>
+  <title>nginx配置模版 | 方始博客</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://52shuzhai.com/2016/10/07/2016-10-07-微信小程序配置三/">
+    <link itemprop="mainEntityOfPage" href="http://52shuzhai.com/2019/05/29/nginx配置模版/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="寂寞颜">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">微信小程序配置三
+          <h1 class="post-title" itemprop="name headline">nginx配置模版
 
               
             
@@ -347,24 +347,12 @@
                 
               
 
-              <time title="创建时间：2016-10-07 09:15:40" itemprop="dateCreated datePublished" datetime="2016-10-07T09:15:40+08:00">2016-10-07</time>
+              <time title="创建时间：2019-05-29 00:59:07 / 修改时间：01:10:48" itemprop="dateCreated datePublished" datetime="2019-05-29T00:59:07+08:00">2019-05-29</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-27 00:54:16" itemprop="dateModified" datetime="2019-05-27T00:54:16+08:00">2019-05-27</time>
               
             
           </span>
@@ -398,46 +386,20 @@
       
 
       
-        <h2 id="networkTimeout"><a href="#networkTimeout" class="headerlink" title="networkTimeout"></a>networkTimeout</h2><p>设置网络超时时间</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">属性</th>
-<th style="text-align:right">类型</th>
-<th style="text-align:center">必填</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">request</td>
-<td style="text-align:right">Number</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">wx.request的超时时间，单位毫秒</td>
-</tr>
-<tr>
-<td style="text-align:left">connectSocket</td>
-<td style="text-align:right">Number</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">wx.connectSocket的超时时间，单位毫秒</td>
-</tr>
-<tr>
-<td style="text-align:left">request</td>
-<td style="text-align:right">Number</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">wx.request的超时时间，单位毫秒</td>
-</tr>
-</tbody>
-</table>
-<h2 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h2><p>调试模式开启</p>
-<h2 id="page-json"><a href="#page-json" class="headerlink" title="page.json"></a>page.json</h2><p>每个小程序页面也可以使用json文件对窗口进行配置，这个文件在每个模块的文件夹下面</p>
-<pre><code>{
-&quot;navigationBarBackgroundColor&quot;:&quot;#ffffff&quot;,
-&quot;navigationBarTextStyle&quot;:&quot;black&quot;,
-&quot;navitionBarTitleText&quot;:&quot;首页&quot;,
-&quot;backgroundColor&quot;:&quot;#eeeeee&quot;,
-&quot;backgroundTextStyle&quot;:&quot;light&quot;}
-</code></pre>
+        <p>公司统一应用的配置，要求每个应用都要有自己的appid，重新部署，规范化。自己的项目差不多有10个，都是php项目，配置基本一样。配置nginx的时候传统的做法是vim每个nginx配置文件进行配置。这个完全可以自定化，可以写一个配置模板，里面的appid和端口用变量替换。然后用sed命令进行批量替换。</p>
+<ul>
+<li><p>配置模板</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">upstream &#123;appid&#125;_server &#123;</span><br><span class="line">        server *.*.*.*:&#123;port&#125; weight=10 max_fails=2 fail_timeout=20;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行脚本 <em>new.sh</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">APPID=$1</span><br><span class="line">PORT=$2</span><br><span class="line">cp demo.conf $APPID.conf</span><br><span class="line">sed -i &apos;s/&#123;appid&#125;/&apos;&quot;$APPID&quot;&apos;/g&apos; $APPID.conf</span><br><span class="line">sed -i &apos;s/&#123;port&#125;/&apos;&quot;$PORT&quot;&apos;/g&apos; $APPID.conf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh new.sh blog 21800</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>运行之后会根据一个模板生成新的配置文件，里面的端口和对应的appid会自动替换掉。<br>以前看到有人做成网页的，根据选项生产nginx配置文件。 </p>
+
       
     </div>
 
@@ -458,12 +420,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/微信小程序/" rel="tag"># 微信小程序</a>
-          
-        </div>
-      
 
       
       
@@ -473,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/06/2016-10-06-微信小程序配置二/" rel="next" title="微信小程序配置二">
-                <i class="fa fa-chevron-left"></i> 微信小程序配置二
+              <a href="/2019/05/27/新博客/" rel="next" title="新博客">
+                <i class="fa fa-chevron-left"></i> 新博客
               </a>
             
           </div>
@@ -482,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/07/2016-10-07-微信小程序逻辑层-注册程序/" rel="prev" title="微信小程序逻辑层-注册程序">
-                微信小程序逻辑层-注册程序 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -529,17 +481,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -610,23 +553,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#networkTimeout"><span class="nav-number">1.</span> <span class="nav-text">networkTimeout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#debug"><span class="nav-number">2.</span> <span class="nav-text">debug</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#page-json"><span class="nav-number">3.</span> <span class="nav-text">page.json</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
