@@ -304,6 +304,176 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://52shuzhai.com/2019/05/29/gitlabcidi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="寂寞颜">
+      <meta itemprop="description" content="看别人都有博客，自己也想有一个，尽管不更新">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="方始博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/29/gitlabcidi/" class="post-title-link" itemprop="url">gitlab持续集成步骤</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-29 23:56:54" itemprop="dateCreated datePublished" datetime="2019-05-29T23:56:54+08:00">2019-05-29</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-30 00:08:40" itemprop="dateModified" datetime="2019-05-30T00:08:40+08:00">2019-05-30</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>公司有持续集成的系统，步骤为：</p>
+<ol>
+<li>gitlab打tag</li>
+<li>jenkins上选择tab进行构建部署<br>事件操作时需要很繁琐的步骤，要登gitlab，找到工程，找到tag菜单，填入tag名称，选择分支，生成tag。然后登录jenkins，选择工程，选择构建菜单，选择刚才的tag，点击构建。整个流程下来繁琐。<br>这个是在开发环境，生产环境更复杂，需要复制md5在申请部署页面填写。<br>那有没有更简洁的方法了，当然是gitlab ci/di</li>
+</ol>
+<p>今天配置了一下，因为开发环境有自主权，步骤如下</p>
+<ol>
+<li>找一台机器安装gitlab runner</li>
+<li>注册runner到gitlab，需要在工程中生成地址和token。过程中需要选择部署的选项，很简单，按着步骤来就可以，会让写入需要登录的服务器，账号端口等</li>
+<li>第三步再工程中配置构建步骤<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /application/blog</span><br><span class="line">git checkout dev</span><br><span class="line">git pull origin dev</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>开发环境默认为dev目录</p>
+<ol start="4">
+<li>当工程有任何更新时都会触发任务去构建</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://52shuzhai.com/2019/05/29/nginx配置模版/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1881,180 +2051,6 @@ todos: [
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://52shuzhai.com/2016/10/05/2016-10-05-webpack学习三/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="寂寞颜">
-      <meta itemprop="description" content="看别人都有博客，自己也想有一个，尽管不更新">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="方始博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2016/10/05/2016-10-05-webpack学习三/" class="post-title-link" itemprop="url">webpack学习三</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2016-10-05 11:07:05" itemprop="dateCreated datePublished" datetime="2016-10-05T11:07:05+08:00">2016-10-05</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-27 00:54:16" itemprop="dateModified" datetime="2019-05-27T00:54:16+08:00">2019-05-27</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署</strong></p>
-<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><ol>
-<li>在工程下面新建一个文件<em>webpack.config.js</em> `module.exports = {<pre><code>entry:&quot;./entry.js&quot;, 
-output:{
-path:_dirname,
-filename:&quot;bundle.js&quot;
-},module{
-   loaders:[
-   {test:/\.css$/, loader:&quot;style!css&quot;}]}
-</code></pre>};<br>`</li>
-<li>运行 <code>webpack</code></li>
-<li>浏览器打开<em>indexl.html</em> ok</li>
-</ol>
-<h2 id="其它命令参数"><a href="#其它命令参数" class="headerlink" title="其它命令参数"></a>其它命令参数</h2><ol>
-<li>显示进度条和颜色  <code>webpack --progress --colers</code></li>
-<li>文件变动时自己编译<code>webpack --progress -- colers --watch</code><h2 id="开发服务器"><a href="#开发服务器" class="headerlink" title="开发服务器"></a>开发服务器</h2></li>
-<li>安装 <code>npm install webpack-dev-server -g</code></li>
-<li>运行<code>webpack -dev-server --progress --colors</code></li>
-<li>运行 <a href="http://localhost:8080/webpack-dev-server/bundle" target="_blank" rel="noopener"> http://localhost:8080/webpack-dev-server/bundle</a></li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2101,7 +2097,7 @@ filename:&quot;bundle.js&quot;
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
