@@ -453,20 +453,23 @@
       
         
           
-            <p>微信小程序分为逻辑层和视图层，视图层是自己定义的WXML标签，逻辑层使用js，但是小程序并不是运行在浏览器上面，所以不支持document等。<br>App(）</p>
-<h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>App()函数用来注册一个小程序，写在工程下的app.js中。<br>相关参数：</p>
-<ul>
-<li>onLaunch：小程序初始化完成时触发</li>
-<li>onShow：小程序启动或者后台进入前台时触发</li>
-<li>onHide: 程序进入后台时触发</li>
-<li>其它：自定义函数或者变量</li>
-</ul>
-<h2 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h2><ol>
-<li>App()调用时使用this</li>
-<li>在其它模块中调用是使用getApp()</li>
-</ol>
+            <p>
+              微信小程序分为逻辑层和视图层，视图层是自己定义的WXML标签，逻辑层使用js，但是小程序并不是运行在浏览器上面，所以不支持document等。App(）
+注册App()函数用来注册一个小程序，写在工程下的app.js中。相关参数：
 
+onLaunch：小程序初始化完成时触发
+onShow：小程序启动
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/10/07/2016-10-07-微信小程序逻辑层-注册程序/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -619,47 +622,45 @@
       
         
           
-            <h2 id="networkTimeout"><a href="#networkTimeout" class="headerlink" title="networkTimeout"></a>networkTimeout</h2><p>设置网络超时时间</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">属性</th>
-<th style="text-align:right">类型</th>
-<th style="text-align:center">必填</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">request</td>
-<td style="text-align:right">Number</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">wx.request的超时时间，单位毫秒</td>
-</tr>
-<tr>
-<td style="text-align:left">connectSocket</td>
-<td style="text-align:right">Number</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">wx.connectSocket的超时时间，单位毫秒</td>
-</tr>
-<tr>
-<td style="text-align:left">request</td>
-<td style="text-align:right">Number</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">wx.request的超时时间，单位毫秒</td>
-</tr>
-</tbody>
-</table>
-<h2 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h2><p>调试模式开启</p>
-<h2 id="page-json"><a href="#page-json" class="headerlink" title="page.json"></a>page.json</h2><p>每个小程序页面也可以使用json文件对窗口进行配置，这个文件在每个模块的文件夹下面</p>
-<pre><code>{
-&quot;navigationBarBackgroundColor&quot;:&quot;#ffffff&quot;,
-&quot;navigationBarTextStyle&quot;:&quot;black&quot;,
-&quot;navitionBarTitleText&quot;:&quot;首页&quot;,
-&quot;backgroundColor&quot;:&quot;#eeeeee&quot;,
-&quot;backgroundTextStyle&quot;:&quot;light&quot;}
-</code></pre>
+            <p>
+              networkTimeout设置网络超时时间
+
+
+
+属性
+类型
+必填
+说明
+
+
+
+
+request
+Number
+否
+wx.request的超时时间，单位毫秒
+
+
+connectSocket
+Number
+否
+wx.connectSocket的超时时间，单位毫秒
+
+
+request
+Number
+否
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/10/07/2016-10-07-微信小程序配置三/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -812,95 +813,47 @@
       
         
           
-            <h2 id="tabBar"><a href="#tabBar" class="headerlink" title="tabBar"></a>tabBar</h2><p>客户端窗口底部的tab页面切换，<strong>只能配置最好两个、最多5个tab</strong></p>
-<p>属性说明：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">属性</th>
-<th style="text-align:right">类型</th>
-<th style="text-align:center">必填</th>
-<th style="text-align:center">默认值</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">color</td>
-<td style="text-align:right">HexColor</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">tab上的文字默认颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">selectedColor</td>
-<td style="text-align:right">HexColor</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">tab上的文字选中时的颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">backgroundColor</td>
-<td style="text-align:right">HexColor</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">tab的背景颜色</td>
-</tr>
-<tr>
-<td style="text-align:left">boderStyle</td>
-<td style="text-align:right">String</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">black</td>
-<td style="text-align:center">tab上边框的颜色，仅支持black/white</td>
-</tr>
-<tr>
-<td style="text-align:left">list</td>
-<td style="text-align:right">Array</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">tab的列表，详见list属性说明，最少2个、最多5个tab</td>
-</tr>
-</tbody>
-</table>
-<p>list接受一个数组，数组中的每个项都是一个对象，属性值如下</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">属性</th>
-<th style="text-align:right">类型</th>
-<th style="text-align:center">必填</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">pagePath</td>
-<td style="text-align:right">String</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">页面路径，必须在pages中先定义</td>
-</tr>
-<tr>
-<td style="text-align:left">text</td>
-<td style="text-align:right">String</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">tab上按钮文字</td>
-</tr>
-<tr>
-<td style="text-align:left">iconPath</td>
-<td style="text-align:right">String</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">图片路径，icon大小限制为40kb</td>
-</tr>
-<tr>
-<td style="text-align:left">selectedIconPath</td>
-<td style="text-align:right">String</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">选中时的图片路径，icon大小限制为40kb</td>
-</tr>
-</tbody>
-</table>
+            <p>
+              tabBar客户端窗口底部的tab页面切换，只能配置最好两个、最多5个tab
+属性说明：
 
+
+
+属性
+类型
+必填
+默认值
+描述
+
+
+
+
+color
+HexColor
+是
+
+tab上的文字默认颜色
+
+
+selectedColor
+HexColor
+是
+
+tab上的文字选中时的颜色
+
+
+backgrou
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/10/06/2016-10-06-微信小程序配置二/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1053,28 +1006,21 @@
       
         
           
-            <p><strong>我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署</strong></p>
-<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><ol>
-<li>在工程下面新建一个文件<em>webpack.config.js</em> `module.exports = {<pre><code>entry:&quot;./entry.js&quot;, 
-output:{
-path:_dirname,
-filename:&quot;bundle.js&quot;
-},module{
-   loaders:[
-   {test:/\.css$/, loader:&quot;style!css&quot;}]}
-</code></pre>};<br>`</li>
-<li>运行 <code>webpack</code></li>
-<li>浏览器打开<em>indexl.html</em> ok</li>
-</ol>
-<h2 id="其它命令参数"><a href="#其它命令参数" class="headerlink" title="其它命令参数"></a>其它命令参数</h2><ol>
-<li>显示进度条和颜色  <code>webpack --progress --colers</code></li>
-<li>文件变动时自己编译<code>webpack --progress -- colers --watch</code><h2 id="开发服务器"><a href="#开发服务器" class="headerlink" title="开发服务器"></a>开发服务器</h2></li>
-<li>安装 <code>npm install webpack-dev-server -g</code></li>
-<li>运行<code>webpack -dev-server --progress --colors</code></li>
-<li>运行 <a href="http://localhost:8080/webpack-dev-server/bundle" target="_blank" rel="noopener"> http://localhost:8080/webpack-dev-server/bundle</a></li>
-</ol>
-
+            <p>
+              我们不想运行webpack命令时都在后面输入一大堆参数，尤其是很大工程的时候，那么可以把所有的参数都放在配置文件中，配置文件的一个好处是可以方便以后的自动化部署
+配置文件
+在工程下面新建一个文件webpack.config.js `module.exports = {entry:&quot;./en
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/10/05/2016-10-05-webpack学习三/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1227,31 +1173,24 @@ filename:&quot;bundle.js&quot;
       
         
           
-            <p>webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。</p>
-<p>学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。</p>
-<p>按照<a href="http://webpack.github.io/docs/tutorials/getting-started/" target="_blank" rel="noopener">官方教程</a><br>在本地学习。</p>
-<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><ol>
-<li>首先需要安装nodejs</li>
-<li>安装： npm install webpack -g</li>
-<li>新建一个空文件夹</li>
-<li>新建文件<em>entry.js</em> <code>document.write(&quot;It works&quot;)</code></li>
-<li>新建文件<em>index.html</em></li>
-</ol>
-<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;bundle.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-</code></pre><ol start="6">
-<li>运行命令 <code>webpack ./entry.js bundle.js</code></li>
-<li>浏览器打开index.html 将看 <em>It works</em></li>
-</ol>
-<h2 id="模块导出"><a href="#模块导出" class="headerlink" title="模块导出"></a>模块导出</h2><ol>
-<li>新建文件content.js  <code>module.exports=&quot;It works form  content.js&quot;</code></li>
-<li>更新entry.js  <code>document.write(require(&quot;./content.js&quot;))</code></li>
-<li>重新运行 <code>webpack ./entry.js bundle.js</code></li>
-<li>浏览器打开，运行ok</li>
-</ol>
-<p><strong>如何用inport命令导入？</strong></p>
-<p>下一遍，学习如何导入css等。</p>
-
+            <p>
+              webpack顾名思义就是web开发打包工具 ，可以将img、css、js统一到一个文件中。
+学习vuejs，学习组件时不想把所有的组件放到同 一个文件中，因此看demo等，是各个组件分别开发，最后打包到一个文件中。
+按照官方教程在本地学习。
+入门
+首先需要安装nodejs
+安装： npm inst
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/10/04/2016-10-04-webpackѧϰһ/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1404,22 +1343,25 @@ filename:&quot;bundle.js&quot;
       
         
           
-            <p>webpack 打包css</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre><code>npm install css-loader style-loader -g
-</code></pre><p>##开始</p>
-<ol>
-<li>工程还为上一个工程，在工程下添加一个文件<em>style.css</em><br>`body{<pre><code>backgroud:yellow;
-</code></pre> }`</li>
-<li>更新<em>entry.js</em>,添加一行 <code>require(&quot;!style!css!./style.css&quot;) document.write(require(&quot;./content.js&quot;));</code></li>
-<li>运行<code>webpack ./entry.js bundle.js</code></li>
-<li>浏览器打开 <em>index.html</em> 查看，背景已经改变<h2 id="命令加入文件扩展"><a href="#命令加入文件扩展" class="headerlink" title="命令加入文件扩展"></a>命令加入文件扩展</h2>css项我们肯定不想每次都那么些，所以可以在运行命令时绑定文件扩展</li>
-<li>修改入口文件<em>entry.js</em> <code>require(&quot;./style.css&quot;); document.write(require(&quot;./content.js&quot;))</code></li>
-<li>运行命令<code>webpack ./entry.js bundle.js --module--bind &#39;css=style!css&#39;</code>  css文件绑定模块style</li>
-<li>浏览器运行，ok</li>
-</ol>
-<p>下一篇，webpack配置文件</p>
+            <p>
+              webpack 打包css
+安装npm install css-loader style-loader -g
+##开始
 
+工程还为上一个工程，在工程下添加一个文件style.css`body{backgroud:yellow;
+ }`
+更新entry.js,添加一行 require(&quot;!s
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/10/04/2016-10-04-webpack学习二/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1572,13 +1514,21 @@ filename:&quot;bundle.js&quot;
       
         
           
-            <p>微信公眾號放出了小程序，開始為內測，但有人複製 了官方的文档，并且破解了编辑器 ，这样没有收到邀请的开发人员也可以在本地进行搭建环境进行测试。</p>
-<p>9月23号的时候微信放出了官方的文档，去掉了邀请的限制，可以不写appid进行测试，但仅限于本地测试。</p>
-<p>想记录学习的过程，刚好有这个博客，所以 记录下自己学习的过程。</p>
-<p>创建博客命令：<br>hexo new “hexopost”<br>在source_posts就可以看到这个文件，然后打开编辑。<br>发布：<br>hexo clean<br>hexo generate<br>hexo deploy</p>
-<p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo 中文网站</a></p>
-
+            <p>
+              微信公眾號放出了小程序，開始為內測，但有人複製 了官方的文档，并且破解了编辑器 ，这样没有收到邀请的开发人员也可以在本地进行搭建环境进行测试。
+9月23号的时候微信放出了官方的文档，去掉了邀请的限制，可以不写appid进行测试，但仅限于本地测试。
+想记录学习的过程，刚好有这个博客，所以 记录下自己学
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/09/24/2016-09-24-hexo命令/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1731,63 +1681,27 @@ filename:&quot;bundle.js&quot;
       
         
           
-            <h2 id="pages"><a href="#pages" class="headerlink" title="pages"></a>pages</h2><p>pages 设置页面路径，每一项代表页面的<em>路径+文件名</em>，数组的第一项代表初始页面</p>
-<pre><code>{&quot;pages&quot;:
+            <p>
+              pagespages 设置页面路径，每一项代表页面的路径+文件名，数组的第一项代表初始页面
+{&quot;pages&quot;:
     [
         &quot;page/index/index&quot;
     ]
 }
-</code></pre><h2 id="window"><a href="#window" class="headerlink" title="window"></a>window</h2><p>window 设置状态栏、导航条、标题、窗口背景色</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>navigationBarBackgroundColor</td>
-<td>HexColor</td>
-<td>#000000</td>
-<td>导航栏背景颜色，如”#000000”</td>
-</tr>
-<tr>
-<td>navigationBarTextStyle</td>
-<td>String</td>
-<td>white</td>
-<td>导航栏标题颜色，仅支持 black/white</td>
-</tr>
-<tr>
-<td>navigationBarTitleText</td>
-<td>String</td>
-<td></td>
-<td>导航栏标题文字内容</td>
-</tr>
-<tr>
-<td>backgroundColor</td>
-<td>HexColor</td>
-<td>#ffffff</td>
-<td>窗口的背景色</td>
-</tr>
-<tr>
-<td>backgroundTextStyle</td>
-<td>String</td>
-<td>dark</td>
-<td>下拉背景字体、loading 图的样式，仅支持 dark/light</td>
-</tr>
-<tr>
-<td>enablePullDownRefresh</td>
-<td>Boolean</td>
-<td>false</td>
-<td>是否开启下拉刷新</td>
-</tr>
-</tbody>
-</table>
+windowwindow 设置状态栏、导航条、标题、窗口背景色
 
+
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/09/24/2016-09-24-微信小程序配置一/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>

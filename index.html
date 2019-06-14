@@ -459,18 +459,28 @@
       
         
           
-            <p><strong>用php的开着特斯拉下班了，使用java的还在加班</strong></p>
-<p>基于sprongboot，mybatis的开发步骤。</p>
-<ol>
-<li>写实体</li>
-<li>写dao</li>
-<li>写sql映射文件</li>
-<li>写service</li>
-<li>写controller</li>
-</ol>
-<p>整体下来效率比较底，也许可以使用工具来生成，但是总是感觉不够爽，开发人员应该把精力投入到业务逻辑开发中，而不是写重复的或者是固定格式的东西。springboot框架做到了这一点，上手快，配置简单。 </p>
+            <p>
+              用php的开着特斯拉下班了，使用java的还在加班
+基于sprongboot，mybatis的开发步骤。
 
+写实体
+写dao
+写sql映射文件
+写service
+写controller
+
+整体下来效率比较底，也许可以使用工具来生成，但是总是感觉不够爽，开发人员应该把精力投入到业务逻辑开发中，而不是
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/14/慢java/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -629,10 +639,19 @@
       
         
           
-            <p>最近在重新学习java，在14年的时候自己还是用Java的，在一个传统公司给银行做项目，当时用的框架是spring和mybites。记忆很深的是一大堆配置和过滤器。后来因为新公司用的是php，不知那来的勇气自学php了，后来到现在一直用php。直到最近，因为项目中使用到java，学习了一下java，使用spring boot。顺便和php框架做一个比较，发现java现在上手比php容易。</p>
-<p>使用maven很容易搭建起一个demo来进行开发，然后配合注解，可以完全专注于开发，不需要关心框架的事情，对于业务开发来说是非常友好。当前比较流行的是golang和rust，很多php转做golang，建议也不要排斥java，golang是比较好，但是java还是有很大的市场，要淘汰会比较难。</p>
-
+            <p>
+              最近在重新学习java，在14年的时候自己还是用Java的，在一个传统公司给银行做项目，当时用的框架是spring和mybites。记忆很深的是一大堆配置和过滤器。后来因为新公司用的是php，不知那来的勇气自学php了，后来到现在一直用php。直到最近，因为项目中使用到java，学习了一下java，
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/10/javaphp/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -773,9 +792,19 @@
       
         
           
-            <p>开发中一些资源介于经常变化和永不变化之间，例如前端中的翻译资源以及初始化值。这些资源不需要频繁调整，但是产品可能会突然的修改，如果直接写在项目中，改动时需要打包升级。如果持久话在数据中需要提供单独的接口来进行数据的读取。最近其它cdn的使用场景时想到这些资源可以放到cdn，需要修改时重新覆盖cdn的资源。方便维护和升级。</p>
-
+            <p>
+              开发中一些资源介于经常变化和永不变化之间，例如前端中的翻译资源以及初始化值。这些资源不需要频繁调整，但是产品可能会突然的修改，如果直接写在项目中，改动时需要打包升级。如果持久话在数据中需要提供单独的接口来进行数据的读取。最近其它cdn的使用场景时想到这些资源可以放到cdn，需要修改时重新覆盖cdn的
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/09/数据库和cdn/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -928,24 +957,22 @@
       
         
           
-            <p>公司有持续集成的系统，步骤为：</p>
-<ol>
-<li>gitlab打tag</li>
-<li>jenkins上选择tab进行构建部署<br>事件操作时需要很繁琐的步骤，要登gitlab，找到工程，找到tag菜单，填入tag名称，选择分支，生成tag。然后登录jenkins，选择工程，选择构建菜单，选择刚才的tag，点击构建。整个流程下来繁琐。<br>这个是在开发环境，生产环境更复杂，需要复制md5在申请部署页面填写。<br>那有没有更简洁的方法了，当然是gitlab ci/di</li>
-</ol>
-<p>今天配置了一下，因为开发环境有自主权，步骤如下</p>
-<ol>
-<li>找一台机器安装gitlab runner</li>
-<li>注册runner到gitlab，需要在工程中生成地址和token。过程中需要选择部署的选项，很简单，按着步骤来就可以，会让写入需要登录的服务器，账号端口等</li>
-<li>第三步再工程中配置构建步骤<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /application/blog</span><br><span class="line">git checkout dev</span><br><span class="line">git pull origin dev</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>开发环境默认为dev目录</p>
-<ol start="4">
-<li>当工程有任何更新时都会触发任务去构建</li>
-</ol>
+            <p>
+              公司有持续集成的系统，步骤为：
 
+gitlab打tag
+jenkins上选择tab进行构建部署事件操作时需要很繁琐的步骤，要登gitlab，找到工程，找到tag菜单，填入tag名称，选择分支，生成tag。然后登录jenkins，选择工程，选择构建菜单，选择刚才的tag，点击构建。整个流程下来繁琐。这
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/29/gitlabcidi/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1086,21 +1113,19 @@
       
         
           
-            <p>公司统一应用的配置，要求每个应用都要有自己的appid，重新部署，规范化。自己的项目差不多有10个，都是php项目，配置基本一样。配置nginx的时候传统的做法是vim每个nginx配置文件进行配置。这个完全可以自定化，可以写一个配置模板，里面的appid和端口用变量替换。然后用sed命令进行批量替换。</p>
-<ul>
-<li><p>配置模板</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">upstream &#123;appid&#125;_server &#123;</span><br><span class="line">        server *.*.*.*:&#123;port&#125; weight=10 max_fails=2 fail_timeout=20;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行脚本 <em>new.sh</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">APPID=$1</span><br><span class="line">PORT=$2</span><br><span class="line">cp demo.conf $APPID.conf</span><br><span class="line">sed -i &apos;s/&#123;appid&#125;/&apos;&quot;$APPID&quot;&apos;/g&apos; $APPID.conf</span><br><span class="line">sed -i &apos;s/&#123;port&#125;/&apos;&quot;$PORT&quot;&apos;/g&apos; $APPID.conf</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh new.sh blog 21800</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>运行之后会根据一个模板生成新的配置文件，里面的端口和对应的appid会自动替换掉。<br>以前看到有人做成网页的，根据选项生产nginx配置文件。 </p>
-
+            <p>
+              公司统一应用的配置，要求每个应用都要有自己的appid，重新部署，规范化。自己的项目差不多有10个，都是php项目，配置基本一样。配置nginx的时候传统的做法是vim每个nginx配置文件进行配置。这个完全可以自定化，可以写一个配置模板，里面的appid和端口用变量替换。然后用sed命令进行批量替
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/29/nginx配置模版/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1237,12 +1262,23 @@
       
         
           
-            <p>新的博客，用hexo搭建，部署在github上，以前也是用github搭建，用的是jekyll，比較複雜。</p>
-<p>後面用wordpress搭建在阿里雲上，但服務器太貴。</p>
-<p>所以這次就用github，不需要服務器費用，費用只有域名的費用。</p>
-<p>後期準備，把以前的書摘導進來。</p>
+            <p>
+              新的博客，用hexo搭建，部署在github上，以前也是用github搭建，用的是jekyll，比較複雜。
+後面用wordpress搭建在阿里雲上，但服務器太貴。
+所以這次就用github，不需要服務器費用，費用只有域名的費用。
+後期準備，把以前的書摘導進來。
 
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/27/新博客/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1379,17 +1415,19 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <p>
+              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/26/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1542,22 +1580,23 @@
       
         
           
-            <p>MongoDB入门</p>
-<ol>
-<li>启动命令</li>
-</ol>
-<pre><code>.\mongod.exe --dbpath=D:\mongodb\db
-</code></pre><ol start="2">
-<li>连接 </li>
-</ol>
-<pre><code>.\mongod.exe
-</code></pre><ol start="3">
-<li>操作<ol start="4">
-<li>插入</li>
-</ol>
-</li>
-</ol>
-<pre><code>db.user.insert(post);
+            <p>
+              MongoDB入门
+
+启动命令
+
+.\mongod.exe --dbpath=D:\mongodb\db
+
+连接 
+
+.\mongod.exe
+
+操作
+插入
+
+
+
+db.user.insert(post);
 5. 查询
 
 
@@ -1565,18 +1604,18 @@ db.user.find();
 6. 查询一个
 
 
-db.user.findOne()
-7. 更新
-
-
-db.blog.update({title:&quot;MongoDB入门&quot;},post)
-8. 删除
-
-
-db.blog.remove(title:&quot;MongoDB精通&quot;);
-9. 
-</code></pre>
+db.user.find
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/11/26/2016-11-26-mongoDb入门/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1729,28 +1768,20 @@ db.blog.remove(title:&quot;MongoDB精通&quot;);
       
         
           
-            <p>喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。</p>
-<p>不管了，其实我也不知道自己想成为谁，能成为谁，先说自己最近关注的技术，然后做个筛选。</p>
-<ul>
-<li>vuejs</li>
-<li>yaf</li>
-<li>css</li>
-<li>shell</li>
-<li>git</li>
-<li>docker</li>
-<li>nosql</li>
-<li>mysql</li>
-<li>jquery</li>
-<li>linux</li>
-<li>微信小程序</li>
-<li>。。。想到了再补充</li>
-</ul>
-<p>现在公司的业务是做数据报表统计，用到的技术主要有数据查询、各种图展示、系统部署。</p>
-<p>那么现在我需要学习的技术有shell脚本，linux基础知识，css，mysql，yaf。这些掌握的更熟练的话可以更好的完成自己手上当前的工作。</p>
-<p>那么vuejs、nosql、docker是自己感兴趣的东西，工作中暂时用不上，所以这些可以做为自己下班时间研究的东西。平时做一些demo进行学习。</p>
-<p>有时会太专注于技术，技术是解决问题，如果能给你的工作提供帮助，一定要多研究。如果只是自己喜欢，那也要多研究，但是不能影响你的工作。</p>
-
+            <p>
+              喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。
+不管了，其实我也不知道自己想成为谁，能成为谁，先说自己最近
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/11/06/2016-11-06-web程序员必备技能/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1903,41 +1934,21 @@ db.blog.remove(title:&quot;MongoDB精通&quot;);
       
         
           
-            <p>vuejs组件学习</p>
-<pre><code>Vue.component(&apos;todo-item&apos;, {
-// The todo-item component now accepts a// &quot;prop&quot;, which is like a custom attribute.// This prop is called todo. 
-props: [&apos;todo&apos;], 
-template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
-})
-</code></pre><p>现在，我们可以使用 v-bind 指令将 todo 传到每一个重复的组件中：</p>
-<pre><code>&lt;div id=&quot;app-7&quot;&gt;
-&lt;ol&gt;
-&lt;todo-item v-for=&quot;todo in todos&quot; v-bind:todo=&quot;todo&quot;&gt;&lt;/todo-item&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-
-
-
-
+            <p>
+              vuejs组件学习
 Vue.component(&apos;todo-item&apos;, {
- props: [&apos;todo&apos;],
-  template: &apos;&lt;li&gt;{{ todo.text }}&lt;/li&gt;&apos;
-  })
-  var app7 = new Vue({
-   el: &apos;#app-7&apos;,
-   data: {
-todos: [
-  { text: &apos;Learn JavaScript&apos; },
-  { text: &apos;Learn Vue&apos; },
-  { text: &apos;Build something awesome&apos; }
-]
- }
- })
-</code></pre><p>vue-component 的 todo-item 和 ol 中的todo-item 对应<br>在vue-component 中 props 通过todo  将值传入 template 中 </p>
-<p>new vue todos 和 v-for </p>
-<p>v-bind:todo = “todo”:前一个todo 是 组件component 中的 props的todo ，后面todo 是v-for 中的todo ，做一个绑定</p>
-
+// The todo-item component now accepts a// &quot;prop&quot;, which is like a custom attribute.// This
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2016/10/28/2016-10-28-vuejs组件/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
