@@ -106,18 +106,18 @@
 
 
 
-  <meta name="description" content="webpack 打包css 安装npm install css-loader style-loader -g ##开始  工程还为上一个工程，在工程下添加一个文件style.css`body{backgroud:yellow;  }` 更新entry.js,添加一行 require(&amp;quot;!style!css!./style.css&amp;quot;) document.write(require">
-<meta name="keywords" content="大军博客">
+  <meta name="description" content="电子商务系统资料收集  从五大模块了解电商系统结构 http://www.woshipm.com/pd/924757.html 号店技术总监 黄哲铿：电商O2O系统架构最佳实践 https://www.useit.com.cn/thread-10460-1-1.html">
+<meta name="keywords" content="产品,架构,电商">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack学习二">
-<meta property="og:url" content="http://52shuzhai.com/2016/10/04/2016-10-04-webpack学习二/index.html">
+<meta property="og:title" content="电商系统资料">
+<meta property="og:url" content="http://52shuzhai.com/2019/06/17/电商系统资料/index.html">
 <meta property="og:site_name" content="方始博客">
-<meta property="og:description" content="webpack 打包css 安装npm install css-loader style-loader -g ##开始  工程还为上一个工程，在工程下添加一个文件style.css`body{backgroud:yellow;  }` 更新entry.js,添加一行 require(&amp;quot;!style!css!./style.css&amp;quot;) document.write(require">
+<meta property="og:description" content="电子商务系统资料收集  从五大模块了解电商系统结构 http://www.woshipm.com/pd/924757.html 号店技术总监 黄哲铿：电商O2O系统架构最佳实践 https://www.useit.com.cn/thread-10460-1-1.html">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-26T16:54:16.000Z">
+<meta property="og:updated_time" content="2019-06-17T15:29:15.646Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack学习二">
-<meta name="twitter:description" content="webpack 打包css 安装npm install css-loader style-loader -g ##开始  工程还为上一个工程，在工程下添加一个文件style.css`body{backgroud:yellow;  }` 更新entry.js,添加一行 require(&amp;quot;!style!css!./style.css&amp;quot;) document.write(require">
+<meta name="twitter:title" content="电商系统资料">
+<meta name="twitter:description" content="电子商务系统资料收集  从五大模块了解电商系统结构 http://www.woshipm.com/pd/924757.html 号店技术总监 黄哲铿：电商O2O系统架构最佳实践 https://www.useit.com.cn/thread-10460-1-1.html">
 
 
 
@@ -125,7 +125,7 @@
 
   
   
-  <link rel="canonical" href="http://52shuzhai.com/2016/10/04/2016-10-04-webpack学习二/">
+  <link rel="canonical" href="http://52shuzhai.com/2019/06/17/电商系统资料/">
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>webpack学习二 | 方始博客</title>
+  <title>电商系统资料 | 方始博客</title>
   
 
 
@@ -355,7 +355,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://52shuzhai.com/2016/10/04/2016-10-04-webpack学习二/">
+    <link itemprop="mainEntityOfPage" href="http://52shuzhai.com/2019/06/17/电商系统资料/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="寂寞颜">
@@ -372,7 +372,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">webpack学习二
+          <h1 class="post-title" itemprop="name headline">电商系统资料
 
               
             
@@ -398,24 +398,12 @@
                 
               
 
-              <time title="创建时间：2016-10-04 14:47:26" itemprop="dateCreated datePublished" datetime="2016-10-04T14:47:26+07:00">2016-10-04</time>
+              <time title="创建时间：2019-06-17 22:18:18 / 修改时间：22:29:15" itemprop="dateCreated datePublished" datetime="2019-06-17T22:18:18+07:00">2019-06-17</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-26 23:54:16" itemprop="dateModified" datetime="2019-05-26T23:54:16+07:00">2019-05-26</time>
               
             
           </span>
@@ -449,20 +437,12 @@
       
 
       
-        <p>webpack 打包css</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre><code>npm install css-loader style-loader -g
-</code></pre><p>##开始</p>
+        <p>电子商务系统资料收集</p>
 <ol>
-<li>工程还为上一个工程，在工程下添加一个文件<em>style.css</em><br>`body{<pre><code>backgroud:yellow;
-</code></pre> }`</li>
-<li>更新<em>entry.js</em>,添加一行 <code>require(&quot;!style!css!./style.css&quot;) document.write(require(&quot;./content.js&quot;));</code></li>
-<li>运行<code>webpack ./entry.js bundle.js</code></li>
-<li>浏览器打开 <em>index.html</em> 查看，背景已经改变<h2 id="命令加入文件扩展"><a href="#命令加入文件扩展" class="headerlink" title="命令加入文件扩展"></a>命令加入文件扩展</h2>css项我们肯定不想每次都那么些，所以可以在运行命令时绑定文件扩展</li>
-<li>修改入口文件<em>entry.js</em> <code>require(&quot;./style.css&quot;); document.write(require(&quot;./content.js&quot;))</code></li>
-<li>运行命令<code>webpack ./entry.js bundle.js --module--bind &#39;css=style!css&#39;</code>  css文件绑定模块style</li>
-<li>浏览器运行，ok</li>
+<li>从五大模块了解电商系统结构 <a href="http://www.woshipm.com/pd/924757.html" target="_blank" rel="noopener">http://www.woshipm.com/pd/924757.html</a></li>
+<li>号店技术总监 黄哲铿：电商O2O系统架构最佳实践 <a href="https://www.useit.com.cn/thread-10460-1-1.html" target="_blank" rel="noopener">https://www.useit.com.cn/thread-10460-1-1.html</a></li>
+<li></li>
 </ol>
-<p>下一篇，webpack配置文件</p>
 
       
     </div>
@@ -484,6 +464,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/产品/" rel="tag"># 产品</a>
+          
+            <a href="/tags/架构/" rel="tag"># 架构</a>
+          
+            <a href="/tags/电商/" rel="tag"># 电商</a>
+          
+        </div>
+      
 
       
       
@@ -493,8 +483,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/24/2016-09-24-微信小程序配置一/" rel="next" title="微信小程序配置">
-                <i class="fa fa-chevron-left"></i> 微信小程序配置
+              <a href="/2019/06/14/慢java/" rel="next" title="慢java">
+                <i class="fa fa-chevron-left"></i> 慢java
               </a>
             
           </div>
@@ -502,10 +492,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/04/2016-10-04-webpackѧϰһ/" rel="prev" title="webpack学习一">
-                webpack学习一 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -554,17 +540,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -727,23 +704,6 @@
       </div>
 
       
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令加入文件扩展"><span class="nav-number">2.</span> <span class="nav-text">命令加入文件扩展</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
       
 
@@ -894,7 +854,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2016/10/04/2016-10-04-webpack学习二/'
+    refer: '2019/06/17/电商系统资料/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
