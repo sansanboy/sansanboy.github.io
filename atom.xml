@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://52shuzhai.com/"/>
-  <updated>2020-04-04T13:49:24.345Z</updated>
+  <updated>2020-04-19T04:01:17.159Z</updated>
   <id>http://52shuzhai.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>团队规范推行思路</title>
+    <link href="http://52shuzhai.com/2020/04/19/%E5%9B%A2%E9%98%9F%E8%A7%84%E8%8C%83%E6%8E%A8%E8%A1%8C%E6%80%9D%E8%B7%AF/"/>
+    <id>http://52shuzhai.com/2020/04/19/%E5%9B%A2%E9%98%9F%E8%A7%84%E8%8C%83%E6%8E%A8%E8%A1%8C%E6%80%9D%E8%B7%AF/</id>
+    <published>2020-04-19T02:21:05.000Z</published>
+    <updated>2020-04-19T04:01:17.159Z</updated>
+    
+    <content type="html"><![CDATA[<p>团队的规模越来越大时，就需要制定一些统一的规范。包括代码风格、命名等。推行的方法有两种，一种是借鉴行业通用的在内部直接推行；另一种是先进行情况的了解再进行有目标的推行，逐渐完善；</p><p>直接借鉴推的缺点是很多可能是用不到的，并且成员接受度上不够；</p><p>根据当前我们的情况进行推。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;团队的规模越来越大时，就需要制定一些统一的规范。包括代码风格、命名等。推行的方法有两种，一种是借鉴行业通用的在内部直接推行；另一种是先进行情况的了解再进行有目标的推行，逐渐完善；&lt;/p&gt;
+&lt;p&gt;直接借鉴推的缺点是很多可能是用不到的，并且成员接受度上不够；&lt;/p&gt;
+&lt;p&gt;根据
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>前端团队成长</title>
@@ -503,31 +527,6 @@
     
     
       <category term="技术" scheme="http://52shuzhai.com/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vuejs组件</title>
-    <link href="http://52shuzhai.com/2016/10/28/2016-10-28-vuejs%E7%BB%84%E4%BB%B6/"/>
-    <id>http://52shuzhai.com/2016/10/28/2016-10-28-vuejs%E7%BB%84%E4%BB%B6/</id>
-    <published>2016-10-27T17:19:11.000Z</published>
-    <updated>2020-03-04T11:21:36.882Z</updated>
-    
-    <content type="html"><![CDATA[<p>vuejs组件学习</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</span><br><span class="line"><span class="comment">// The todo-item component now accepts a// "prop", which is like a custom attribute.// This prop is called todo. </span></span><br><span class="line">props: [<span class="string">'todo'</span>], </span><br><span class="line">template: <span class="string">'&lt;li&gt;&#123;&#123; todo.text &#125;&#125;&lt;/li&gt;'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>现在，我们可以使用 v-bind 指令将 todo 传到每一个重复的组件中：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-7"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">todo-item</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span> <span class="attr">v-bind:todo</span>=<span class="string">"todo"</span>&gt;</span><span class="tag">&lt;/<span class="name">todo-item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</span><br><span class="line"> props: [<span class="string">'todo'</span>],</span><br><span class="line">  template: <span class="string">'&lt;li&gt;&#123;&#123; todo.text &#125;&#125;&lt;/li&gt;'</span></span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">var</span> app7 = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">   el: <span class="string">'#app-7'</span>,</span><br><span class="line">   data: &#123;</span><br><span class="line">todos: [</span><br><span class="line">  &#123; <span class="attr">text</span>: <span class="string">'Learn JavaScript'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">text</span>: <span class="string">'Learn Vue'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">text</span>: <span class="string">'Build something awesome'</span> &#125;</span><br><span class="line">]</span><br><span class="line"> &#125;</span><br><span class="line"> &#125;)</span><br></pre></td></tr></table></figure><p>vue-component 的 todo-item 和 ol 中的todo-item 对应<br>在vue-component 中 props 通过todo  将值传入 template 中 </p><p>new vue todos 和 v-for </p><p>v-bind:todo = “todo”:前一个todo 是 组件component 中的 props的todo ，后面todo 是v-for 中的todo ，做一个绑定</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;vuejs组件学习&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2
-      
-    
-    </summary>
-    
-    
-    
-      <category term="vuejs" scheme="http://52shuzhai.com/tags/vuejs/"/>
     
   </entry>
   
