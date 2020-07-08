@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://52shuzhai.com/"/>
-  <updated>2020-04-19T04:01:17.159Z</updated>
+  <updated>2020-07-08T13:59:40.432Z</updated>
   <id>http://52shuzhai.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://52shuzhai.com/2020/07/08/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://52shuzhai.com/2020/07/08/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0/</id>
+    <published>2020-07-08T13:59:40.432Z</published>
+    <updated>2020-07-08T13:59:40.432Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>百人研发团队的难题：研发管理、绩效考核、组织文化和OKR <a href="https://juejin.im/post/5d255efae51d45775b419c52" target="_blank" rel="noopener">https://juejin.im/post/5d255efae51d45775b419c52</a></li><li>《产品研发管理IPD》 <a href="https://www.yinxiang.com/everhub/note/22628f20-336a-4046-89eb-177b26bafb61" target="_blank" rel="noopener">https://www.yinxiang.com/everhub/note/22628f20-336a-4046-89eb-177b26bafb61</a></li><li>苏宁乔新亮：世界上最好的研发管理十条经验 <a href="https://www.infoq.cn/article/top-10-experience-on-development-management" target="_blank" rel="noopener">https://www.infoq.cn/article/top-10-experience-on-development-management</a></li><li>阿里巴巴B2B高效研发管理实践 <a href="https://developer.aliyun.com/article/69816" target="_blank" rel="noopener">https://developer.aliyun.com/article/69816</a></li><li>微盟CTO：公司快速成长时，研发管理怎样才能跟得上？<a href="https://www.tapd.cn/forum/view/83613" target="_blank" rel="noopener">https://www.tapd.cn/forum/view/83613</a></li><li>IPD入门及个人理解 <a href="https://www.jianshu.com/p/64e7ce8341f1" target="_blank" rel="noopener">https://www.jianshu.com/p/64e7ce8341f1</a></li><li>从项目管理的角度看团队成员能力提升的3个维度 <a href="https://www.tapd.cn/forum/view/86684" target="_blank" rel="noopener">https://www.tapd.cn/forum/view/86684</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;百人研发团队的难题：研发管理、绩效考核、组织文化和OKR &lt;a href=&quot;https://juejin.im/post/5d255efae51d45775b419c52&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://jueji
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>团队规范推行思路</title>
@@ -502,31 +525,6 @@
     
     
       <category term="mongoDb" scheme="http://52shuzhai.com/tags/mongoDb/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>web程序员必备技能</title>
-    <link href="http://52shuzhai.com/2016/11/06/2016-11-06-web%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD/"/>
-    <id>http://52shuzhai.com/2016/11/06/2016-11-06-web%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD/</id>
-    <published>2016-11-06T07:04:54.000Z</published>
-    <updated>2019-05-26T16:54:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。</p><p>不管了，其实我也不知道自己想成为谁，能成为谁，先说自己最近关注的技术，然后做个筛选。</p><ul><li>vuejs</li><li>yaf</li><li>css</li><li>shell</li><li>git</li><li>docker</li><li>nosql</li><li>mysql</li><li>jquery</li><li>linux</li><li>微信小程序</li><li>。。。想到了再补充</li></ul><p>现在公司的业务是做数据报表统计，用到的技术主要有数据查询、各种图展示、系统部署。</p><p>那么现在我需要学习的技术有shell脚本，linux基础知识，css，mysql，yaf。这些掌握的更熟练的话可以更好的完成自己手上当前的工作。</p><p>那么vuejs、nosql、docker是自己感兴趣的东西，工作中暂时用不上，所以这些可以做为自己下班时间研究的东西。平时做一些demo进行学习。</p><p>有时会太专注于技术，技术是解决问题，如果能给你的工作提供帮助，一定要多研究。如果只是自己喜欢，那也要多研究，但是不能影响你的工作。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;喜欢关注新技术，但是做为一个web开发者，有哪些是必备技能呢?先从自己关注的方面来说，然后做一个筛选，然后努力提高。突然觉得这些技术就像短板理论一样，在技术中要全还是要深，这个应该取决于对自己的定位，如果是目标是产品经理，如果是架构师。。。&lt;/p&gt;
-&lt;p&gt;不管了，其实我也不
-      
-    
-    </summary>
-    
-    
-    
-      <category term="技术" scheme="http://52shuzhai.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
