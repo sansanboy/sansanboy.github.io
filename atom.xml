@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://52shuzhai.com/"/>
-  <updated>2020-10-08T02:59:16.522Z</updated>
+  <updated>2020-10-08T13:44:57.911Z</updated>
   <id>http://52shuzhai.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>读书_黑客与画家</title>
+    <link href="http://52shuzhai.com/2020/10/08/%E8%AF%BB%E4%B9%A6-%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
+    <id>http://52shuzhai.com/2020/10/08/%E8%AF%BB%E4%B9%A6-%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/</id>
+    <published>2020-10-08T13:30:15.000Z</published>
+    <updated>2020-10-08T13:44:57.911Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近有同事离职，很不错的小伙子，走之前送了他一本《黑客与画家》，以前也给其他人送过这本书。为什么送这本书？肯定是因为觉得不错。在自己的职业生涯中，这本书给了很多的启发。</p><p>与这本书的缘分还是从大学讲起，在大学的时候一段时间对黑客感兴趣，在图书馆找相关的书，偶然看到这本书的名字，忘记当时有没有借了。这本书的译者是阮一峰，当然是毕业之后才知道阮的名气的，也因为阮，知道了卡尔维诺，后面买了他的全集，可惜丢了。</p><p>毕业之后大概14年的时候，中国的创业很火，说到创业就必然谈天使投资。和《黑客与画家》的作者就是著名的天使投资人，硅谷创业之父Paul Graham。这本书就是根据他的博客整理的。所以这本书每一章之间并没有必然的联系。</p><p>书中印象比较深的几件事情。</p><ol><li>创业一般是创办小公司，做市场规模，然后卖给大公司。他也是把自己的公司卖给雅虎。</li><li>你向上或者向下都取决于你。</li></ol><p>看来这本书是需要重新读一遍了。在这个迷茫的年份。</p><p>以前很喜欢看书，最近没有那么痴狂的原因是觉得读书解决不了当前的问题，当前自己面临的问题。当前的困难不是看书就可以解决的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近有同事离职，很不错的小伙子，走之前送了他一本《黑客与画家》，以前也给其他人送过这本书。为什么送这本书？肯定是因为觉得不错。在自己的职业生涯中，这本书给了很多的启发。&lt;/p&gt;
+&lt;p&gt;与这本书的缘分还是从大学讲起，在大学的时候一段时间对黑客感兴趣，在图书馆找相关的书，偶然看
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://52shuzhai.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>给刚上大学侄子的建议</title>
@@ -497,28 +522,6 @@
 &lt;p&gt;後面用wordpress搭建在阿里雲上，但服務器太貴。&lt;/p&gt;
 &lt;p&gt;所以這次就用github，不需要服務器費用，費用只有域名的費用。&lt;/p&gt;
 &lt;p&gt;後
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://52shuzhai.com/2019/05/26/hello-world/"/>
-    <id>http://52shuzhai.com/2019/05/26/hello-world/</id>
-    <published>2019-05-26T01:47:03.595Z</published>
-    <updated>2019-05-26T01:47:03.595Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
     
     </summary>
