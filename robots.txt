@@ -16,4 +16,4 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 
-Sitemap: https://52shuzhai.com/sitemap.xml
+Sitemap: https://blog.dajun.info/sitemap.xml
