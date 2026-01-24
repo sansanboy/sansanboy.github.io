@@ -1,11 +1,6 @@
 User-agent: *
 
 Allow: /
-Allow: /archives/
-Allow: /categories/
-Allow: /tags/
-Allow: /tasks/
-Allow: /about/
 
 
 Disallow: /vendors/
