@@ -1,6 +1,4 @@
----
-title: Jim
----
+
 
 # Jim
 Senior Software Engineer
